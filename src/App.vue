@@ -2,8 +2,18 @@
   <section>
     <header><h1>My friends</h1></header>
     <ul>
-      <friend-contact></friend-contact>
-      <friend-contact></friend-contact>
+      <friend-contact
+        name="Степа Постухов"
+        mobile-phone="+375 (44) 123-45-67"
+        email-adress="stepa@gmail.com"
+        is-favorite="1"
+      ></friend-contact>
+      <friend-contact
+        name="Никита Генкин"
+        mobile-phone="+375 (44) 246-89-53"
+        email-adress="seriy@gmail.com"
+        is-favorite="0"
+      ></friend-contact>
     </ul>
   </section>
 </template>
@@ -23,7 +33,7 @@ export default {
           id: "Seriy",
           name: "Никита Генкин",
           phone: "+375 (44) 246-89-53",
-          email: "seriy@gmail.com ",
+          email: "seriy@gmail.com",
         },
       ],
     };
