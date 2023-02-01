@@ -3,6 +3,7 @@
     <h2>{{ name }} {{ isFavorite ? "(favorite)" : "" }}</h2>
     <button @click="toggleDetails">Show details</button>
     <button @click="toggleFavorite">Toggle favorite</button>
+    <button @click="$emit('delete', id)">Удалить</button>
     <ul v-if="detailsAreVisible">
       <li>
         <strong>Phone: {{ mobilePhone }}</strong>
@@ -31,7 +32,7 @@ export default {
       default: false,
     },
   },
-  emits: ["toggle-favorite"],
+  emits: ["toggle-favorite", "delete"],
   // emits: {
   //   "toggle-favorite": function (id) {
   //     if (id) {
